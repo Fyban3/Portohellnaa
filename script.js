@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectsData = {
     pizzaazura: {
       title: 'PizzaAzura',
-      tag: 'MSME Digitalization',
-      desc: 'Ini merupakan website pemesanan pizza dengan integrasi WhatsApp sebagai komunikasi dengan UMKM. Tujuan website ini murni membantu UMKM dalam efisiensi waktu dan tenaga. Kami juga membuat halaman admin untuk memantau pesanan pizza, memantau selling (penjualan), memantau stok bahan, dan merekap pengeluaran serta pemasukan pada UMKM. Proyek ini kami buat dengan kombinasi frontend dan backend yaitu PHP murni dan Node.js dengan integrasi database SQL, lalu kami deploy di pizzaazura.my.id untuk diberikan pada UMKM.',
-      tech: ['PHP Murni', 'Node.js', 'SQL Database', 'WhatsApp API', 'Admin Dashboard', 'Financial Recording'],
+      tag: 'MSME / Digital Ordering',
+      desc: 'Developed a digital ordering platform for a local MSME featuring WhatsApp ordering integration, inventory monitoring, sales analytics, order management, and financial reporting dashboard. Built using PHP, Node.js, and MySQL to improve operational efficiency and customer service.',
+      tech: ['PHP', 'Node.js', 'MySQL', 'WhatsApp API', 'Sales Analytics', 'Financial Dashboard'],
       images: [
         'Asset%20Pizza%20azura/WhatsApp%20Image%202026-06-25%20at%2022.37.34.jpeg',
         'Asset%20Pizza%20azura/WhatsApp%20Image%202026-06-25%20at%2022.37.25.jpeg',
@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     animehype: {
       title: 'Anime Hype',
       tag: 'Mobile App / Flutter',
-      desc: 'Yaitu Aplikasi mobile untuk melihat list-list anime terbaru, anime yang akan datang, dan jadwal anime lainnya. Juga tempat mencari informasi tentang anime, manga, dan character pada anime ataupun manga. Aplikasi ini saya deploy dengan bahasa pemrograman Flutter dengan berbasis API dari opensource API.',
-      tech: ['Flutter', 'Dart', 'REST API', 'JSON Parsing', 'State Management'],
+      desc: 'Developed a cross-platform Flutter application integrating an open-source Anime REST API to provide seasonal anime, upcoming releases, anime schedules, manga information, character profiles, and search functionality. The application demonstrates experience in API consumption, asynchronous programming, responsive mobile UI, and state management.',
+      tech: ['Flutter', 'Dart', 'REST API', 'JSON Parsing', 'State Management', 'Asynchronous Programming'],
       images: [
         'Asset%20HypeNime/WhatsApp%20Image%202026-06-25%20at%2021.45.36%20(1).jpeg',
         'Asset%20HypeNime/WhatsApp%20Image%202026-06-25%20at%2021.45.35.jpeg',
@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
       demoLink: '#'
     },
     jejakbintan: {
-      title: 'Jejak Pulau Bintan web',
-      tag: 'Web / Sistem Informasi',
-      desc: 'Ini merupakan aplikasi web pertama saya yang menggunakan PHP atau hanya mengintegrasikan HTML, CSS, dan JavaScript pada proyek ini. Website ini membantu untuk wisatawan mendapatkan informasi tentang tempat wisata yang berada di Pulau Bintan, melihat rating-rating tempat wisata tersebut, dan melihat lokasi tempat wisata tersebut dari Google Maps.',
-      tech: ['HTML5', 'CSS3', 'JavaScript', 'PHP Native', 'Google Maps API'],
+      title: 'Jejak Pulau Bintan',
+      tag: 'Web / Information System',
+      desc: 'Designed and developed a tourism information website using HTML, CSS, JavaScript, and PHP. The platform helps travelers explore destinations across Bintan Island through attraction information, destination ratings, and Google Maps integration, improving accessibility to local tourism.',
+      tech: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'Google Maps API', 'Rating System'],
       images: [
         'Asset%20Jejak%20Pulau%20Bintan%20Web/WhatsApp%20Image%202026-06-25%20at%2021.50.24.jpeg',
         'Asset%20Jejak%20Pulau%20Bintan%20Web/WhatsApp%20Image%202026-06-25%20at%2021.50.42.jpeg',
@@ -55,10 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
       demoLink: 'https://shdyt13.github.io/Sistem-Pariwisata-Lokal/index.html'
     },
     xplorepinang: {
-      title: 'XplorePinang Web',
-      tag: 'Web Blog / Tourism',
-      desc: 'Merupakan website blog untuk melihat tempat wisata kuliner, wisata religi, wisata alam, dan lain-lain yang berada di Pulau Bintan terkhusus di Tanjungpinang. Website ini terkhususkan untuk para wisatawan asing yang ingin mengunjungi Tanjungpinang. Website ini terintegrasikan PHP murni dan kami deploy dengan Vercel. Website ini lumayan memakan banyak waktu untuk riset wisata lokal, entah itu wisata alam, religi, atau wisata kuliner.',
-      tech: ['PHP Murni', 'Vercel Deploy', 'Blog System', 'Field Research', 'Multi-category Attractions'],
+      title: 'Xplore Pinang',
+      tag: 'Web / Tourism Platform',
+      desc: 'Co-developed a tourism platform focused on Tanjungpinang that presents culinary destinations, religious tourism, cultural heritage, and natural attractions. The project required extensive field research and content organization before deployment using Vercel and PHP.',
+      tech: ['PHP', 'Vercel', 'Bootstrap', 'Field Research', 'Content Organization'],
       images: [
         'Asset%20XplorePinang/WhatsApp%20Image%202026-06-25%20at%2022.11.59.jpeg',
         'Asset%20XplorePinang/WhatsApp%20Image%202026-06-25%20at%2022.13.24.jpeg',
@@ -117,18 +117,18 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = document.getElementById('message').value;
 
       if (!name || !email || !message) {
-        alert('Semua kolom form harus diisi.');
+        alert('All form fields are required.');
         return;
       }
 
       const submitButton = contactForm.querySelector('button[type="submit"]');
       const originalBtnText = submitButton.innerHTML;
       submitButton.disabled = true;
-      submitButton.innerHTML = 'Mengirim...';
+      submitButton.innerHTML = 'Sending...';
 
       setTimeout(() => {
         contactForm.reset();
-        submitButton.innerHTML = 'Terkirim! <i data-lucide="check"></i>';
+        submitButton.innerHTML = 'Sent! <i data-lucide="check"></i>';
         submitButton.style.background = 'linear-gradient(135deg, #10B981 0%, #059669 100%)'; 
         if (window.lucide) window.lucide.createIcons();
         
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (window.lucide) window.lucide.createIcons();
         }, 3000);
 
-        alert(`Terima kasih ${name}, pesan Anda berhasil dikirim secara simulasi!`);
+        alert(`Thank you ${name}, your message has been sent successfully (simulated)!`);
       }, 1500);
     });
   }
