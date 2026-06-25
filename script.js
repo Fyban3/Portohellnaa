@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
      ========================================================================== */
   const projectsData = {
     pizzaazura: {
-      title: 'PizzaAzura Digital Platform',
-      tag: 'Web Application / MSME Digitalization',
-      desc: 'Platform pemesanan digital khusus untuk UMKM lokal PizzaAzura. Menyediakan fitur integrasi pemesanan langsung ke WhatsApp, sistem pemantauan stok inventaris bahan baku real-time, dasbor analisis penjualan harian/bulanan, manajemen antrean pesanan, dan laporan analisis keuangan digital. Solusi ini membantu meningkatkan efisiensi operasional dapur dan kualitas layanan pelanggan secara signifikan.',
-      tech: ['PHP', 'Node.js', 'MySQL', 'WhatsApp API', 'Bootstrap', 'Sales Analytics'],
+      title: 'PizzaAzura',
+      tag: 'MSME Digitalization',
+      desc: 'Ini merupakan website pemesanan pizza dengan integrasi WhatsApp sebagai komunikasi dengan UMKM. Tujuan website ini murni membantu UMKM dalam efisiensi waktu dan tenaga. Kami juga membuat halaman admin untuk memantau pesanan pizza, memantau selling (penjualan), memantau stok bahan, dan merekap pengeluaran serta pemasukan pada UMKM. Proyek ini kami buat dengan kombinasi frontend dan backend yaitu PHP murni dan Node.js dengan integrasi database SQL, lalu kami deploy di pizzaazura.my.id untuk diberikan pada UMKM.',
+      tech: ['PHP Murni', 'Node.js', 'SQL Database', 'WhatsApp API', 'Admin Dashboard', 'Financial Recording'],
       images: [
         'Asset%20Pizza%20azura/WhatsApp%20Image%202026-06-25%20at%2022.37.34.jpeg',
         'Asset%20Pizza%20azura/WhatsApp%20Image%202026-06-25%20at%2022.37.25.jpeg',
@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
         'Asset%20Pizza%20azura/WhatsApp%20Image%202026-06-25%20at%2022.40.07.jpeg'
       ],
       codeLink: 'https://github.com/Fyban3/Portohellnaa',
-      demoLink: '#'
+      demoLink: 'https://pizzaazura.my.id'
     },
     animehype: {
-      title: 'Anime Hype Mobile App',
-      tag: 'Mobile App / Cross-platform',
-      desc: 'Aplikasi seluler lintas platform yang dibangun menggunakan Flutter dan Dart. Mengintegrasikan open-source Anime REST API untuk menyajikan daftar anime musiman, jadwal rilis episode terbaru, info manga, pencarian karakter, serta profil lengkap anime. Mendemonstrasikan keahlian tingkat lanjut dalam konsumsi API, pemrograman asinkron untuk penanganan data real-time, UI mobile responsif yang mulus, dan manajemen state aplikasi.',
-      tech: ['Flutter', 'Dart', 'REST API', 'JSON Parsing', 'State Management', 'Asynchronous Programming'],
+      title: 'Anime Hype',
+      tag: 'Mobile App / Flutter',
+      desc: 'Yaitu Aplikasi mobile untuk melihat list-list anime terbaru, anime yang akan datang, dan jadwal anime lainnya. Juga tempat mencari informasi tentang anime, manga, dan character pada anime ataupun manga. Aplikasi ini saya deploy dengan bahasa pemrograman Flutter dengan berbasis API dari opensource API.',
+      tech: ['Flutter', 'Dart', 'REST API', 'JSON Parsing', 'State Management'],
       images: [
         'Asset%20HypeNime/WhatsApp%20Image%202026-06-25%20at%2021.45.36%20(1).jpeg',
         'Asset%20HypeNime/WhatsApp%20Image%202026-06-25%20at%2021.45.35.jpeg',
@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
       demoLink: '#'
     },
     jejakbintan: {
-      title: 'Jejak Pulau Bintan Tourism',
-      tag: 'Web / Information System',
-      desc: 'Sebuah website sistem informasi pariwisata interaktif untuk mengeksplorasi destinasi terbaik di Pulau Bintan. Dilengkapi dengan ulasan destinasi, rating kepuasan wisatawan, filter kategori objek wisata (pantai, sejarah, kuliner), dan integrasi API Google Maps untuk memudahkan rute navigasi. Proyek ini berkontribusi langsung pada digitalisasi promosi wisata daerah dan aksesibilitas info lokal.',
-      tech: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'Google Maps API', 'MySQL'],
+      title: 'Jejak Pulau Bintan web',
+      tag: 'Web / Sistem Informasi',
+      desc: 'Ini merupakan aplikasi web pertama saya yang menggunakan PHP atau hanya mengintegrasikan HTML, CSS, dan JavaScript pada proyek ini. Website ini membantu untuk wisatawan mendapatkan informasi tentang tempat wisata yang berada di Pulau Bintan, melihat rating-rating tempat wisata tersebut, dan melihat lokasi tempat wisata tersebut dari Google Maps.',
+      tech: ['HTML5', 'CSS3', 'JavaScript', 'PHP Native', 'Google Maps API'],
       images: [
         'Asset%20Jejak%20Pulau%20Bintan%20Web/WhatsApp%20Image%202026-06-25%20at%2021.50.24.jpeg',
         'Asset%20Jejak%20Pulau%20Bintan%20Web/WhatsApp%20Image%202026-06-25%20at%2021.50.42.jpeg',
@@ -52,13 +52,13 @@ document.addEventListener('DOMContentLoaded', () => {
         'Asset%20Jejak%20Pulau%20Bintan%20Web/WhatsApp%20Image%202026-06-25%20at%2021.51.55.jpeg'
       ],
       codeLink: 'https://github.com/Fyban3/Portohellnaa',
-      demoLink: '#'
+      demoLink: 'https://shdyt13.github.io/Sistem-Pariwisata-Lokal/index.html'
     },
     xplorepinang: {
-      title: 'XplorePinang Tourism Platform',
-      tag: 'Web / Tourism Platform',
-      desc: 'Platform panduan wisata lengkap Kota Tanjungpinang yang memetakan objek wisata kuliner khas, wisata religi bersejarah, cagar budaya Melayu, dan keindahan wisata alam. Proyek ini dikembangkan secara kolaboratif berbasis riset lapangan ekstensif serta penyusunan konten yang terstruktur rapi untuk memastikan pengalaman penjelajahan terbaik sebelum dideploy menggunakan Vercel.',
-      tech: ['PHP', 'Vercel', 'Bootstrap', 'MySQL', 'Field Research', 'UI/UX Design'],
+      title: 'XplorePinang Web',
+      tag: 'Web Blog / Tourism',
+      desc: 'Merupakan website blog untuk melihat tempat wisata kuliner, wisata religi, wisata alam, dan lain-lain yang berada di Pulau Bintan terkhusus di Tanjungpinang. Website ini terkhususkan untuk para wisatawan asing yang ingin mengunjungi Tanjungpinang. Website ini terintegrasikan PHP murni dan kami deploy dengan Vercel. Website ini lumayan memakan banyak waktu untuk riset wisata lokal, entah itu wisata alam, religi, atau wisata kuliner.',
+      tech: ['PHP Murni', 'Vercel Deploy', 'Blog System', 'Field Research', 'Multi-category Attractions'],
       images: [
         'Asset%20XplorePinang/WhatsApp%20Image%202026-06-25%20at%2022.11.59.jpeg',
         'Asset%20XplorePinang/WhatsApp%20Image%202026-06-25%20at%2022.13.24.jpeg',
@@ -176,7 +176,14 @@ document.addEventListener('DOMContentLoaded', () => {
     modalTitle.textContent = data.title;
     modalDesc.innerHTML = data.desc;
     modalCode.href = data.codeLink;
-    modalDemo.href = data.demoLink;
+    
+    // Hide or show demo link based on fallback
+    if (data.demoLink === '#') {
+      modalDemo.style.display = 'none';
+    } else {
+      modalDemo.style.display = 'inline-flex';
+      modalDemo.href = data.demoLink;
+    }
 
     // Render tech stack tags
     modalSkills.innerHTML = '';
